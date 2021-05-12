@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="editor-menu">
+        <button class="bold btn" data-style="bold">B</button>
+        <button class="italic btn" data-style="italic">I</button>
+        <button class="ul btn" data-style="insertUnorderedList">&bull;</button>
+        <button class="btn btn-download">Download as JSON file</button>
+        <label for="file"></label>
+        <button class="btn btn-load">Load local JSON file</button>
+        <input id="file" name="file" type="file" accept=".json" />
+      </div>
+      <div class="text" contenteditable="true"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

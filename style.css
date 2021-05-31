@@ -63,11 +63,8 @@ body {
 }
 
 .text {
+  padding: 30px;
   height: 600px;
   width: 600px;
   box-shadow: 1px 1px 10px #777;
-}
-
-.text {
-  padding: 30px;
 }

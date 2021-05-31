@@ -6,7 +6,6 @@ const loadBtn = document.querySelector(".btn-load");
 let content = document.querySelector(".text");
 
 buttons.addEventListener("click", (e) => {
-  console.log(content);
   if (e.target.classList.contains("btn")) {
     document.execCommand(e.target.dataset["style"], false, null);
   }
@@ -46,7 +45,6 @@ function downloadJsonFile(fileName) {
   let file = new Blob([data], {
     type: "application/json",
   });
-  console.log(file);
   a.href = window.URL.createObjectURL(file);
   a.download = fileName;
   a.innerHTML = "download";
@@ -64,5 +62,3 @@ function loadJsonFile(file, callback) {
   };
   JSONfile.send(null);
 }
-
-//usage:
